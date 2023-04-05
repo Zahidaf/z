@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="R.css">
+</head>
+<body>
+   
+    <nav>
+            <div class="nav-left">
+              <ul>
+                <img class="kiki" src="Assetku/domba.jfif" alt="logo" >
+                <li>
+                    <a href="mycard.html">Home</a>
+                </li>
+                <li>
+                    <a href="form input.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="nav-right">
+                <a href="contak me.html">Contact Me</a>
+            </div>
+          </nav>
+
+    <form onsubmit="getData(event)">
+        <div>
+            <label for="nameProject">Project Name</label>
+            <input class="form-input" id="nameProject" type="text">
+        </div>
+        <div class="container-date">
+            <div class="date">
+                <label for="start-date">Start Date</label>
+                <input class="form-input" id="startDate" type="date">
+            </div>
+    
+            <div class="date">
+                <label for="end-date">End Date</label>
+                <input class="form-input" id="endDate" type="date" >
+            </div>
+        </div>
+        
+        
+        <div>
+            <label for="description">Description</label>
+            <Textarea class="form-input" id="description"></Textarea>
+        </div>
+
+        
+        <div class="container-checklist">
+
+            <div>
+
+                <div class="card-checklist">
+                    <input type="checkbox" id="nodeJs">
+                    <label for="nodeJs">Node Js</label>
+                </div>
+                <div  class="card-checklist">
+                    <input type="checkbox" id="nextJs">
+                    <label for="nextJs">Next Js</label>
+                </div>
+            </div>
+            
+            <div>
+                <div  class="card-checklist">
+                    <input type="checkbox" id="reactJs">
+                    <label for="reactJs">React Js</label>
+                </div>
+                <div  class="card-checklist">
+                    <input type="checkbox" id="typeScript">
+                    <label for="typeScript">Type Script</label>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+
+        <div>
+            <label for="file-img">Upload image</label>
+            <input class="form-input" id="fileImg" type="file">
+        </div>
+
+        <div class="card-button">
+            
+            <button class="button-form">submit here</button>
+        </div>
+        
+    </form>
+    
+    <div class="container-result" id="containerResult">
+         <div class="card-project">
+            <img src="Assetku/koding.jfif" >
+            <p class="title-project">projectku</p>
+            <p class="durasi-project"> durasi : 1 bulan</p>
+            <p class="deskripsi-project">lelah ngantuk pantang menyerah demi menggapai masa depan yang cerah agar terhindar diri dari 
+                sifat orang payah.</p>
+
+
+            <div class="icon-technology">
+                <img id="iconNodeJs" src="Assetku/node js.jfif">
+                <img id="iconReactJs" src="Assetku/react js.jfif">
+                <img id="iconNextJs" src="Assetku/nextjs.png">
+                <img id="iconTypeScript" src="Assetku/typescript.png">
+            </div>
+
+            
+        </div> 
+
+   
+    </div>
+    
+
+    <script src="M.js"></script>
+</body>
+</html>
